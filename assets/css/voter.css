@@ -1,0 +1,40 @@
+body {
+    padding: 5px;
+    background: linear-gradient(rgba(16, 95, 55, 0.8), rgba(16, 95, 55, 0.8)), url('../img/background-img.png');
+}
+
+.voter {
+    margin-top: 70px;
+}
+
+.col {
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 200px;
+    background-color: aliceblue !important;
+    margin: 10px;
+    padding: 70px 0;
+    box-shadow: 6px 6px 6px #11010163;
+    border-radius: 3%;
+    color: #4d3c81;
+    transition: color 15s;
+}
+
+.col:hover{
+    color: rgb(6, 54, 110);   
+}
+
+.state {
+    margin-top: 80px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white !important;
+    text-align: center;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zuma-pu",
+  "version": "1.0.0",
+  "description": "Application to support electronic voting at polling unit",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Melvin Ijih",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "bootstrap-icons": "^1.10.3",
+    "electron": "^22.0.0",
+    "sqlite3": "^5.1.4",
+    "uuid": "^9.0.0"
+  }
+}

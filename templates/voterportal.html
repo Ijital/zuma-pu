@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/voter.css">
+</head>
+<body>
+    <div class="voter container overflow-hidden text-center">
+        <div class="row" >
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row national">
+                    <div class="col" onclick="showBallot('PRESIDENTIAL ELECTION')">
+                        PRESIDENT
+                    </div>
+                    <div class="col" onclick="showBallot('SENATORIAL ELECTION')">
+                        SENATOR
+                    </div>
+                    <div class="col" onclick="showBallot('HOUSE OF REPS ELECTION')">
+                        HOUSE OF REPRESENTIVES
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row state">
+                    <div class="col" onclick="showBallot('GUBERNATORIAL ELECTION')">
+                        GOVERNOR
+                    </div>
+                    <div class="col" onclick="showBallot('HOUSE OF ASSEMBLY ELECTION')">
+                        HOUSE OF ASSEMBLY
+                    </div>
+                    <div class="col" onclick="showBallot('LG ELECTION')">
+                        LOCAL GOVERNMENT
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <button style="margin-bottom: 5px;" class="btn btn-secondary" onclick="closeWindow()">EXIT</button>
+    </footer>
+
+    <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+
+        function showBallot(electionTitle){
+            ipcRenderer.send('onShowBallot', electionTitle);
+        }
+
+        function closeWindow(){
+           window.close();
+        }
+    </script>
+</body>
+
+</html>

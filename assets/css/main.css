@@ -1,0 +1,41 @@
+.menu-bar {
+    float: right;
+    margin-top: 15px;
+}
+
+.menu-btn {
+    background-color: #2e0d50;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    padding: 5px;
+    background: linear-gradient(rgba(16, 95, 55, 0.8), rgba(16, 95, 55, 0.8)), url('../img/background-img.png');  
+}
+
+#brand {
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+
+
+.close-icon.bi-x::before {
+    font-weight: bolder !important;
+    font-size: 23px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white !important;
+    text-align: center;
+}
+
+.footer a {
+    color: white !important;
+}

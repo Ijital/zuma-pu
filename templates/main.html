@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container-fluid main-view">
+        <div class="main-window" style="margin-bottom: 5px;">
+            <div id="brand"> <img src="../assets/img/logo.png" alt=""></div>
+            <div class="menu-bar">
+                <button class="btn btn-secondary menu-btn" onclick="" disabled>Voter Register</button>
+                <button class="btn btn-secondary menu-btn" onclick="" disabled>Incidents</button>
+                <button class="btn btn-secondary menu-btn" onclick="" disabled>Election Result</button>
+                <button class="btn btn-secondary menu-btn" onclick="launchVoterWindow()" disabled>Voter Portal</button>
+                <button class="btn btn-secondary menu-btn" onclick="ShowName()" disabled>Admin Login</button>
+                <button class="btn btn-secondary menu-btn" onclick="CloseMainWindow()">
+                    <i class="bi bi-x close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+
+        function CloseMainWindow() {
+            window.close();
+        }
+
+        function launchVoterWindow(){
+            ipcRenderer.send('onVoterPortalSelect');
+        }
+    </script>
+
+    <footer class="footer">
+        <p>Zuma Electronic Voting System<br>
+            <a href="mailto:hege@example.com">www.ijital.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    padding: 1px;
+   /* background: linear-gradient(rgba(226, 236, 231, 0.8), rgba(226, 236, 231, 0.8)), url('../img/nigeria-coat-of-arm-logo.jpg'); 
+   background-repeat: no-repeat;
+   background-size: cover;  */
+}
+
+
+/* SELECTED PARTY MODAL */
+
+.modal-backdrop {
+    opacity: 0.8 !important;
+}
+
+.modal-content {
+    background-color: white;
+}
+
+.modal-header {
+    display: block !important;
+}
+
+#election-title {
+    margin: 50px;
+    font-weight: bolder;
+}
+
+
+.col:hover {
+    color: rgb(6, 54, 110);
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    color: white !important;
+    text-align: center;
+}
+
+.col img {
+    width: 75%;
+    padding: 2px;
+    /* height: 60%; */
+    object-fit: cover;
+}
+
+#selected-party-logo {
+    height: 150px;
+}
+
+#thumb-print-btn{
+    width: 40%; 
+    color: rgb(165, 190, 142);
+    /* background-color: black; */
+    font-size: 100px;
+}
+
+#selected-party{
+    font-weight: bold;
+    color: rgb(57, 124, 28);
+}
